@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Registrarse";
+}
+<div>
+<h1>Registrarse</h1>
+ <form action='@Url.Action("Registrar", "Account")' method="post"  enctype="multipart/form-data">
+  <p>Username:</p>
+  <input type= "Text" name= "Username" placeholder = "Pensa un nombre de usuario">
+  <p>Contraseña:</p>
+  <input type= "Password" name= "Password" placeholder = "Pensa una contraseña">
+  <p>Nombre:</p>
+  <input type= "Text" name= "Nombre" placeholder = "Ingresa tu nombre">
+  <p>Apellido:</p>
+  <input type= "Text" name= "Apellido" placeholder = "Ingresa tu apellido">
+  <p>Foto:</p>
+  <input type= "File" name= "Foto" accept = "image/*">
+  <button type="submit">Registrarse</button>
+</form>
+</div>

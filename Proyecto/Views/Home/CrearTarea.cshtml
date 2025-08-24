@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "CrearTarea";
+}
+<div>
+<h1>Crea una tarea:</h1>
+    <form Action = '@Url.Action("CrearTarea", "Home")'>
+    <p>Titulo:</p>
+  <input type= "Text" name= "Titulo" placeholder = "Ingresa el titulo">
+    <p>Descripcion:</p>
+  <input type= "Text" name= "Descripcion" placeholder = "Ingresa una descripcion de la tarea">
+    <p>Fecha:</p>
+  <input type= "Date" name= "Fecha">
+    <p>Finalizada:</p>    
+  <input type= "Checkbox" name = "Finalizada">
+  <input type= "Submit" value = "Guardar">
+</form>
+</div>

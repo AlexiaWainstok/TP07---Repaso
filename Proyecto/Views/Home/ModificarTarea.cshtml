@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "ModificarTarea";
+}
+<section>
+    <h1>Aqui vas a poder modificar tu tarea:</h1>
+    <form action='@Url.Action("EditarTarea", "Home", new { Id = ViewBag.Tarea.Id})' method="post">
+    <p>Titulo:</p>
+        <input type= "Text" name="Titulo" placeholder="Ingresa la tarea" value= "@ViewBag.tarea.Titulo" required/>
+        <input type= "Text" name="Descripcion" placeholder="Ingresa la descripción de la tarea" value= "@ViewBag.tarea.Descripcion" required/>
+        <input type= "date" name="Fecha" placeholder="Ingresa la fecha de realización de la tarea" required/>
+        <input type="submit" value="Ingresa los datos de la tarea"/>
+    </form>
+</section>
